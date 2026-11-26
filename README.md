@@ -19,7 +19,7 @@ tar -xvjf tbsdvb_v1016.tar.bz2
 
 cd tbsdvb
 
-wget --no-check-certificate -U "Mozilla/5.0" "[https://raw.githubusercontent.com/RobVK8FOES/TBS-5927SE-Driver-Fixes-And-Blind-Scanner/refs/heads/main/tbs5927se_driver_fixes.patch](https://raw.githubusercontent.com/RobVK8FOES/TBS-5927SE-Driver-Fixes-And-Blind-Scanner/refs/heads/main/tbs5927se_driver_fixes.patch)"
+wget --no-check-certificate -U "Mozilla/5.0" "https://raw.githubusercontent.com/RobVK8FOES/TBS-5927SE-Driver-Fixes-And-Blind-Scanner/refs/heads/master/tbs5927se_driver_fixes.patch"
 
 patch -p1 < tbs5927se_driver_fixes.patch
 
@@ -33,7 +33,7 @@ It is recommended to reboot before proceeding.
 ## Blind Scanner Application Build And Usage
 
 ```bash
-wget --no-check-certificate -U "Mozilla/5.0" "[https://raw.githubusercontent.com/RobVK8FOES/TBS-5927SE-Driver-Fixes-And-Blind-Scanner/refs/heads/main/tbs5927se_blindscan.c](https://raw.githubusercontent.com/RobVK8FOES/TBS-5927SE-Driver-Fixes-And-Blind-Scanner/refs/heads/main/tbs5927se_blindscan.c)"
+wget --no-check-certificate -U "Mozilla/5.0" "https://raw.githubusercontent.com/RobVK8FOES/TBS-5927SE-Driver-Fixes-And-Blind-Scanner/refs/heads/master/tbs5927se_blindscan.c"
 
 gcc -O2 -Wall -o tbs5927se_blindscan tbs5927se_blindscan.c -lm
 ```
